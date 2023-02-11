@@ -1,0 +1,13 @@
+import tkinter as tk
+
+def show_hello():
+    print("Hello World")
+
+root = tk.Tk()
+root.title("My Desktop App")
+root.geometry("200x100")
+
+btn = tk.Button(root, text="Say Hello", command=show_hello)
+btn.pack()
+
+root.mainloop()
